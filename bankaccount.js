@@ -57,3 +57,6 @@ console.log(oliveAccount);
 
 quentinAccount.deposit(3764736577392988);
 console.log(quentinAccount);
+
+//output details of myAccount
+console.log(`Account name: ${myAccount.getName()} :\t balance: ${myAccount.getBalance()}`);
