@@ -1,5 +1,7 @@
-alert("This is the beginning of my journey learning JavaScript!");
+let firstNumber = 50;
+let secondNumber = 80;
+let sum = firstNumber+secondNumber;
 
-console.warn("This is a warning message!");
+console.log(`The sum is ${sum}`);
 
-console.error("This is an error message!");
+//string builder 
