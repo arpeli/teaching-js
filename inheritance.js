@@ -51,8 +51,7 @@ class Staff{
 
     //methods
     getInfo(){
-        return `STAFF DETAILS: \nName: ${this.name} \nAge: ${this.age} \n
-        Email: ${this.email} \nID Number: ${this.id_number} \nSalary: ${this.salary}`;
+        return `STAFF DETAILS: \nName: ${this.name} \nAge: ${this.age} \nEmail: ${this.email} \nID Number: ${this.id_number} \nSalary: ${this.salary}`;
     }
 
     requestLeave(){
@@ -124,10 +123,17 @@ class Cook extends Staff{
     }
 }
 
+//creating a new object from Lecturer class
 let object1 = new Lecturer("Olive N", 8347365, "null@example.com", 45, 786737, 676372637, "Computer Architecture");
 console.log(object1);
 object1.writeRecommendation();
+object1info = object1.getInfo(); //remember the getinfo() method was declared in the Staff class and not Lecturer class
+console.log(object1info);
 
+
+//creating new object from Cook class
 let object2 = new Cook("Quentin O", 8246342, "q@mku.ke", 33,56343,);
 console.log(object2);
 object2.sellFood();
+object2info = object2.getInfo(); //getinfo() also works on Cook object since it is from parent class
+console.log(object2info);
